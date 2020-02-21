@@ -1,0 +1,14 @@
+.badge.custom-badge{
+    font-weight: 500;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: rgb(161, 161, 161);
+    margin-top: 10px;
+}
+
+.img-full{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
