@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Shaheena Hameed">
+  <title>Eventor · Venues</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .event-card a {
+      text-decoration: none;
+      color: #545e68;
+    }
+
+    .custom-control.form-check-inline {
+      display: inline-block;
+    }
+
+    /* The slider itself */
+    .slider {
+      -webkit-appearance: none;
+      /* Override default CSS styles */
+      appearance: none;
+      width: 100%;
+      /* Full-width */
+      height: 5px;
+      /* Specified height */
+      background: #d3d3d3;
+      /* Grey background */
+      outline: none;
+      /* Remove outline */
+      opacity: 0.7;
+      /* Set transparency (for mouse-over effects on hover) */
+      -webkit-transition: .2s;
+      /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+    }
+
+    /* Mouse-over effects */
+    .slider:hover {
+      opacity: 1;
+      /* Fully shown on mouse-over */
+    }
+
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Override default look */
+      appearance: none;
+      width: 10px;
+      /* Set a specific slider handle width */
+      height: 25px;
+      /* Slider handle height */
+      background: #007bff;
+      /* Green background */
+      cursor: pointer;
+      /* Cursor on hover */
+    }
+
+    .slider::-moz-range-thumb {
+      width: 5px;
+      /* Set a specific slider handle width */
+      height: 25px;
+      /* Slider handle height */
+      background: #007bff;
+      /* Green background */
+      cursor: pointer;
+      /* Cursor on hover */
+    }
+
+    .form-wrapper {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .vendor-copy {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .checked {
+      color: orange;
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="album.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="../../img/logo.png" style="height: 30px" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../event-categories.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../vendors.html">Vendors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../user/register.html">Register</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </li> -->
+        </ul>
+        <a class="btn btn-secondary ml-sm-2" href="../user/login.html" role="button">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h1 class="text-center mb-5">Kingsbury Hotel</h1>
+        <p class="mb-sm-5 vendor-copy">The Kingsbury, formerly the Ceylon Continental Hotel Colombo and the Ceylon
+          Inter-Continental Hotel, is a nine-story hotel located at 48, Janadhipathi Mawatha in the city centre of
+          Colombo, Sri Lanka. It was built by U. N. Gunasekera, and is owned by Hotel Services (Ceylon) PLC, which is a
+          subsidiary of Hayleys PLC. It was refurbished and reopened in January 2013</p>
+        <div class="row">
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/01.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/02.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/03.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/04.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/05.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+          <div class="col-md-4 event-card">
+            <div class="card mb-4 shadow-sm">
+              <img src="../../img/venues/kingsbury/06.jpg" style="height: 225px;" alt="Kingsbury">
+            </div>
+          </div>
+        </div>
+        <h2 class="text-center mb-3 mt-5">Request Quotation</h2>
+        <div class="form-wrapper border border-secondary p-4">
+          <div class="form-group mb-sm-4">
+            <h6 class=" mb-sm-2">Select a type of event</h6>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="birthday" name="eventtype" type="radio" class="custom-control-input" checked="checked"
+                required="">
+              <label class="custom-control-label" for="birthday">Birthday</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="wedding" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="wedding">Wedding</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="corperate" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="corperate">Corperate</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="engagement" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="engagement">Engagement</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="workshop" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="workshop">Workshop</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="other" name="eventtype" type="radio" class="custom-control-input">
+              <label class="custom-control-label" for="other">Other</label>
+            </div>
+          </div>
+          <div class="form-group mb-sm-2mb-sm-2">
+            <h6 class=" mb-sm-1">Select the amount of people attending your event</h6>
+            <div class="form-group">
+              <input type="range" min="50" max="500" step="50" value="50" style="width: 60%;" class="slider  mb-4"
+                id="formControlRange">
+              <p><input class="range-people" style="width: 35px; text-align: center;" value="50" /> People</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Event Date</h6>
+              <input type="date" class="form-control" id="event-date-input" aria-describedby="eventdate">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Name</h6>
+              <input type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Email</h6>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Phone</h6>
+              <input type="el" class="form-control" id="phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <h6 class="mb-sm-2">Questions Or Description</h6>
+              <textarea class="form-control" rows="6" id="questions" aria-describedby="phoneNumber"></textarea>
+            </div>
+          </div>
+          <div class="form-footer mt-sm-2">
+            <p class="text-muted">This will send quotation requests to kingsbury</p>
+            <button type="submit" class="btn btn-primary ">Request Pricing</button>
+          </div>
+        </div>
+        <br />
+        <div class="featured-vendors mt-5">
+          <h2 class="text-center mt-5 mb-3">Recommended Venues</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <h4 class="text-center">Movenpick</h4>
+              <img src="../../img/venues/movenpick.jpg"  class="my-2" style="height: 225px; max-width: 100%;" alt="catering">
+              <div class="ratings mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>In a sleek high-rise building overlooking the Laccadive Sea, There's a buffet eatery, plus French and Japanese restaurants. A rooftop terrace has an infinity pool, a hot tub, a cocktail bar and sea views.</p>
+              <p><a class="btn btn-primary" href="#" role="button">Get Quote »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <h4 class="text-center">Shangrilla</h4>
+              <img src="../../img/venues/shangrilla.jpg"  class="my-2" style="height: 225px; max-width: 100%;" alt="catering">
+              <div class="ratings mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>Shangri-La Colombo is a 5-star hotel in Colombo, Sri Lanka. The property is part of the larger One Galle Face development project at the site of the Old Army Headquarters. It is the second Shangri-La hotel on the island </p>
+              <p><a class="btn btn-primary" href="#" role="button">Get Quote »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <h4 class="text-center">Galadari</h4>
+              <img src="../../img/venues/galadari.jpg"  class="my-2" style="height: 225px; max-width: 100%;" alt="catering">
+              <div class="ratings mb-2">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>Overlooking the Laccadive Sea, this upscale hotel is a 15-minute walk from Galle Face Green park, 3 km from Gangaramaya Buddhist Temple and 11 km from the National Zoological Gardens of Sri Lanka</p>
+              <p><a class="btn btn-primary" href="#" role="button">Get Quote »</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 col-md">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../../img/logo.png" style="height: 30px" alt="">
+          </a>
+          <p class="d-block mb-3 text-muted" style="padding-left: 40px;">© 2020</p>
+        </div>
+        <div class="col-3 col-md">
+          <h6>Events</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Weddings</a></li>
+            <li><a class="text-muted" href="#">Birthdays</a></li>
+            <li><a class="text-muted" href="#">Corporate</a></li>
+            <li><a class="text-muted" href="#">Engagement</a></li>
+            <li><a class="text-muted" href="#">Workshops</a></li>
+            <li><a class="text-muted" href="#">Other</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md">
+          <h6>Vendors</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Venues</a></li>
+            <li><a class="text-muted" href="#">Catering</a></li>
+            <li><a class="text-muted" href="#">Sounds & Lighting</a></li>
+            <li><a class="text-muted" href="#">Photography & Videography</a></li>
+            <li><a class="text-muted" href="#">Decorations</a></li>
+            <li><a class="text-muted" href="#">Design & Print</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-md">
+          <h6>About</h6>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">About Us</a></li>
+            <li><a class="text-muted" href="#">Contact</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#formControlRange').on('input', function () {
+        $('.range-people').val($(this).val());
+      });
+    });
+  </script>
+</body>
+
+</html>
