@@ -1,0 +1,77 @@
+<main role="main">
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-3">Request Quotation</h2>
+        <div class="form-wrapper border border-secondary p-4">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Event Date</h6>
+              <input type="date" class="form-control" id="event-date-input" aria-describedby="eventdate">
+            </div>
+          </div>
+          <div class="form-group mb-sm-4">
+            <h6 class=" mb-sm-2">Select a type of event</h6>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="birthday" name="eventtype" type="radio" class="custom-control-input" checked="checked"
+                required="">
+              <label class="custom-control-label" for="birthday">Birthday</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="wedding" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="wedding">Wedding</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="corperate" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="corperate">Corperate</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="engagement" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="engagement">Engagement</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="workshop" name="eventtype" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="workshop">Workshop</label>
+            </div>
+            <div class="custom-control custom-radio form-check-inline">
+              <input id="other" name="eventtype" type="radio" class="custom-control-input">
+              <label class="custom-control-label" for="other">Other</label>
+            </div>
+          </div>
+          <div class="form-group mb-sm-2mb-sm-2">
+            <h6 class=" mb-sm-1">Select the amount of people attending your event</h6>
+            <div class="form-group">
+              <input type="range" min="50" max="500" step="50" value="50" style="width: 60%;" class="slider  mb-4"
+                id="formControlRange">
+              <p><input class="range-people" style="width: 35px; text-align: center;" value="50" /> People</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Name</h6>
+              <input type="name" class="form-control" id="name">
+            </div>
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Email</h6>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group col-md-4">
+              <h6 class="mb-sm-2">Phone</h6>
+              <input type="el" class="form-control" id="phone">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <h6 class="mb-sm-2">Questions Or Description</h6>
+              <textarea class="form-control" rows="6" id="questions" aria-describedby="phoneNumber"></textarea>
+            </div>
+          </div>
+          <div class="form-footer mt-sm-2">
+            <p class="text-muted">This will send quotation requests to all vendors</p>
+            <button type="submit" class="btn btn-primary ">Request Pricing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
